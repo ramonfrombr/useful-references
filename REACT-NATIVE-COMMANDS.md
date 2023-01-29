@@ -6,6 +6,10 @@
 
 `npx expo start --web`
 
+## Delete babel cache that affects environment variables
+
+rm -rf node_modules/.cache/babel-loader/*
+
 ## Run app with new environment variables
 
 `npx expo start --web --clear`
