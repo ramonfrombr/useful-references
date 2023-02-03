@@ -22,8 +22,7 @@
 
 `docker stop NAME`
 
-
-``
+`docker volume ls`
 
 ``
 
