@@ -9,3 +9,5 @@
 ## Create a new app in the project
 
 `python manage.py startapp polls`
+
+``
