@@ -31,3 +31,7 @@ Binding local files to files in container for faster development process
 Run bash to access files in container
 
 `docker exec -it node-app bash`
+
+Non default dockerfile for development
+
+`docker build -f Dockerfile.dev -t devimage .`
