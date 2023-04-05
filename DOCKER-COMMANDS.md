@@ -79,3 +79,7 @@
 ## Delete a docker container along with its volumes
 
 `docker rm node-app -fv`
+
+## Open MongoDB shell
+
+`docker exec -it node-docker-mongo-1 mongosh -u "ramon" -p "123456"`
