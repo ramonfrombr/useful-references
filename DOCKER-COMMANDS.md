@@ -26,6 +26,8 @@
 
 Binding local files to files in container for faster development process
 
-`docker run -v pathtofolderonlocation:pathtofolderoncontainer -p 3000:3000 -d --name node-app node-app-image`
+`docker run -v "$(pwd)":/app -p 3000:3000 -d --name node-app node-app-image`
 
-``
+Run bash to access files in container
+
+`docker exec -it node-app bash`
