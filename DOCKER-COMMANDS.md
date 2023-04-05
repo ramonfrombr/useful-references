@@ -14,6 +14,10 @@
 
 `docker compose up -d --build`
 
+## Combining docker compose files for running container
+
+`docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d`
+
 ## Deletes container ran by Docker Compose
 
 `docker compose down`
