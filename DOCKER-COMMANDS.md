@@ -1,6 +1,6 @@
 ## Build a container image
 
-`docker build -t IMAGE_NAME DIRECTORY`
+`docker build -t IMAGE_NAME DOCKERFILE_DIRECTORY`
 
 `docker container ls`
 
