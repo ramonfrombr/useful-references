@@ -38,7 +38,7 @@
 
 ## Defining environment variable when running container
 
-docker run -v "$(pwd)":/app:ro -v /app/node_modules --env PORT=4000 -p 3000:4000 -d --name node-app node-app-image-dev
+`docker run -v "$(pwd)":/app:ro -v /app/node_modules --env PORT=4000 -p 3000:4000 -d --name node-app node-app-image-dev`
 
 ## Run bash to access files in container
 
