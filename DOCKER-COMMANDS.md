@@ -6,9 +6,17 @@
 
 `docker compose up`
 
+## Runs docker container in detach mode
+
 `docker compose up -d`
 
+## Deletes container ran by Docker Compose
+
 `docker compose down`
+
+## Deletes container and volumes
+ 
+`docker compose down -v`
 
 `docker container ls`
 
@@ -52,3 +60,14 @@
 
 `docker build -f Dockerfile.dev -t devimage .`
 
+## Deletes a specific volume
+
+`docker volume rm VOLUME_NAME`
+
+## Deletes all unused volumes
+
+`docker volume prune`
+
+## Delete a docker container along with its volumes
+
+`docker rm node-app -fv`
