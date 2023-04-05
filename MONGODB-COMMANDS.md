@@ -1,13 +1,24 @@
-mongosh -u "username" -p "password"
+## Access database
 
-db
+`mongosh -u "username" -p "password"`
 
-use DATABASE_NAME
+## List current database
 
-show dbs
+`db`
 
+## Create new database
 
-db.books.insertOne({"name": "harry potter"})
+`use DATABASE_NAME`
 
-db.books.find()
+## List databases
+
+`show dbs`
+
+## Inserts a row in a table(and creates table if does not exist)
+
+`db.books.insertOne({"name": "harry potter"})`
+
+## Finds all rows in table
+
+`db.books.find()`
 
