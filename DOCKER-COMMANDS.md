@@ -10,6 +10,10 @@
 
 `docker compose up -d`
 
+## Rebuilds the image and runs the docker container
+
+`docker compose up -d --build`
+
 ## Deletes container ran by Docker Compose
 
 `docker compose down`
