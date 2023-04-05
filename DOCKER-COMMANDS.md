@@ -28,6 +28,14 @@ Binding local files to files in container for faster development process
 
 `docker run -v "$(pwd)":/app -p 3000:3000 -d --name node-app node-app-image`
 
+Prevents bind module from deleting node_modules
+
+`docker run -v "$(pwd)":/app -v /app/node_modules -p 3000:3000 -d --name node-app node-app-image-dev`
+
+Read only binding local (prevents container from creating files in the source folder)
+
+`docker run -v "$(pwd)":/app:ro -v /app/node_modules -p 3000:3000 -d --name node-app node-app-image-dev`
+
 Run bash to access files in container
 
 `docker exec -it node-app bash`
@@ -35,3 +43,4 @@ Run bash to access files in container
 Non default dockerfile for development
 
 `docker build -f Dockerfile.dev -t devimage .`
+
