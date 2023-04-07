@@ -18,6 +18,11 @@
 
 `docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d`
 
+## Run only a specific service in the container
+
+`docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d node-app`
+
+
 ## Deletes container ran by Docker Compose
 
 `docker compose down`
