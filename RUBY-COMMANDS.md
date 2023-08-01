@@ -19,3 +19,6 @@ rails c
 
 
 rails g model Member band:references name
+
+
+rails g scaffold Member --skip-migration
