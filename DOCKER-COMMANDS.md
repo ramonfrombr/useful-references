@@ -1,3 +1,5 @@
+
+
 ## Build a container image
 
 `docker build -t IMAGE_NAME DOCKERFILE_DIRECTORY`
@@ -22,6 +24,13 @@
 
 `docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d node-app`
 
+## Stop all containers
+
+`docker stop $(docker ps -a -q)`
+
+## Remove all containers
+
+`docker rm $(docker ps -a -q)`
 
 ## Deletes container ran by Docker Compose
 
